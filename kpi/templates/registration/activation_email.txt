@@ -1,0 +1,10 @@
+Thanks for signing up with Whistler!
+
+Confirming your account will give you full access to Whistler applications. Please visit the following url to finish activation of your new account.
+
+{{user}}
+
+{{ kpi_protocol }}://{{ site.domain }}/accounts/activate/{{activation_key}}/
+
+Best,
+Whistler Team

@@ -1,0 +1,26 @@
+{% extends "registration.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="registration__bg">
+
+  <form action="." method="post" class="registration">
+    <div class="registration--logo"><a href="/"><img src="{% static 'img/kobologo.png' %}"/></a></div>
+
+    <div class="registration__footer">
+        <p class="registration__message">
+            We strongly recommend to secure your account with two-step verification.
+        </p>
+
+        <p class="registration__message">
+            <a href="/accounts/twofa/">Yes, I want to activate Two-Factor Authentication <i class="k-icon-next"></i></a>
+        </p>
+        <p class="registration__message">
+            <a href="/">No, just let me go, I can always turn it on later <i class="k-icon-next"></i></a>
+        </p>
+    </div>
+
+  </form>
+</div>
+
+{% endblock %}
